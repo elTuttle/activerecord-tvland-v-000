@@ -11,10 +11,10 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
+    roles = []
     characters.each do |character|
       show_title = Show.find_by(id: character.show_id).name
       "#{character.name} - #{show_title}"
-      binding.pry
     end
   end
 

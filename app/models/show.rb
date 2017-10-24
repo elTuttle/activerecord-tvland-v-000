@@ -5,6 +5,7 @@ class Show < ActiveRecord::Base
 
   def build_network(call_letters:)
     self.network = Network.find_by(call_letters: call_letters)
+    binding.pry
   end
 
 end

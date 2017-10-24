@@ -1,8 +1,8 @@
 class Character < ActiveRecord::Base
   belongs_to :show
-  belongs_to :actors
+  belongs_to :actor
 
-  attr_accessor :actor
+  self.actor
 
 
 end

@@ -4,7 +4,7 @@ class Character < ActiveRecord::Base
 
   attr_accessor :actor
 
-  def actor=(name)
+  def actor=(actor)
     name.characters << self
   end
   #binding.pry

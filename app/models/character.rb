@@ -4,6 +4,8 @@ class Character < ActiveRecord::Base
 
   attr_accessor :actor
 
+  @actor = Actor.new(@actor)
+
   #binding.pry
 
 end

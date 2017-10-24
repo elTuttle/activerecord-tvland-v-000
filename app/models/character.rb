@@ -4,6 +4,5 @@ class Character < ActiveRecord::Base
 
   attr_accessor :actor
 
-  self.actor = Actor.new(first_name: name)
 
 end

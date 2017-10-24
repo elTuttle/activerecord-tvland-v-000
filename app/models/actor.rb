@@ -5,6 +5,7 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
 
   #binding.pry
+  attr_accessor :characters
 
   def full_name
     "#{self.first_name} #{self.last_name}"

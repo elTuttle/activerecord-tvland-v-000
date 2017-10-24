@@ -5,8 +5,8 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
 
   def build_network(call_letters:)
-    self.network = Network.find_by(call_letters: call_letters)
-    binding.pry
+    network = Network.new(call_letters: call_letters)
+    network.shows << self
   end
 
 end

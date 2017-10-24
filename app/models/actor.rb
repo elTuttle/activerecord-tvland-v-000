@@ -13,7 +13,8 @@ class Actor < ActiveRecord::Base
   def list_roles
     characters.each do |character|
       show_title = Show.find_by(id: character.show_id).name
-      puts "#{character.name} - #{show_title}"
+      "#{character.name} - #{show_title}"
+      binding.pry
     end
   end
 

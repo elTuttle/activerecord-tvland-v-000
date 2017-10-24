@@ -4,6 +4,5 @@ class Character < ActiveRecord::Base
 
   attr_accessor :actor
 
-  @actor.characters << self
 
 end

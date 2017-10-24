@@ -6,6 +6,7 @@ class Actor < ActiveRecord::Base
 
   #binding.pry
   attr_accessor :characters
+  @characters = []
 
   def full_name
     "#{self.first_name} #{self.last_name}"

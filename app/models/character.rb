@@ -12,5 +12,9 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
 
+  def method_name
+    
+  end
+
 
 end

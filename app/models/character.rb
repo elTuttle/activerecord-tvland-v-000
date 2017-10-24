@@ -9,6 +9,6 @@ class Character < ActiveRecord::Base
     actor.characters << self
   end
   #binding.pry
-  
+
 
 end

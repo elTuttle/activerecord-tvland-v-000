@@ -13,7 +13,7 @@ class Character < ActiveRecord::Base
   end
 
   def method_name
-    
+
   end
 
 

@@ -4,8 +4,6 @@ class Actor < ActiveRecord::Base
 
   attr_accessor :characters
 
-  @characters = self.characters
-
   def full_name
     "#{self.first_name} #{self.last_name}"
   end

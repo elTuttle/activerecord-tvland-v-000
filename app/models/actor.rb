@@ -14,8 +14,9 @@ class Actor < ActiveRecord::Base
     roles = []
     characters.each do |character|
       show_title = Show.find_by(id: character.show_id).name
-      roles <<"#{character.name} - #{show_title}"
+      roles << "#{character.name} - #{show_title}"
     end
+    roles
   end
 
 end
